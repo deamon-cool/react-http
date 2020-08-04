@@ -10,6 +10,7 @@ class Posts extends React.Component {
     };
 
     componentDidMount() {
+        console.log(this.props);
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(res => {
                 const posts = res.data.slice(0, 4);

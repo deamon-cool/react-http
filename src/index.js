@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import axios from 'axios';
 
 axios.interceptors.request.use(request => {
-    console.log(request);
+    // console.log(request);
 
     return request;
 }, err => {
@@ -16,7 +16,7 @@ axios.interceptors.request.use(request => {
 });
 
 axios.interceptors.response.use(response => {
-    console.log(response);
+    // console.log(response);
 
     return response;
 }, err => {

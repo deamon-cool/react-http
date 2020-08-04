@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-import Post from '../../components/Post/Post';
-import FullPost from '../../components/FullPost/FullPost';
-import NewPost from '../../components/NewPost/NewPost';
 import './Blog.css';
 import axios from 'axios';
 
@@ -58,9 +55,6 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
-                <section className="Posts">
-                    {posts}
-                </section>
             </div>
         );
     }

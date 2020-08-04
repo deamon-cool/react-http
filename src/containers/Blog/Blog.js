@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './Blog.css';
+import Posts from './Posts/Posts';
 
 class Blog extends Component {
 
@@ -15,6 +16,7 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
+                <Posts />
             </div>
         );
     }

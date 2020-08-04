@@ -1,36 +1,8 @@
 import React, { Component } from 'react';
 
 import './Blog.css';
-import axios from 'axios';
 
 class Blog extends Component {
-    state = {
-        posts: [],
-        selectedPostId: null,
-        error: false
-    };
-
-    componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-            .then(res => {
-                const posts = res.data.slice(0, 4);
-                const updatedPosts = posts.map(post => {
-                    return {
-                        ...post,
-                        author: 'Dam'
-                    };
-                });
-
-                this.setState({ posts: updatedPosts });
-            }).catch(err => {
-                this.setState({ error: true });
-            });
-    }
-
-    postSelectedHandler = (id) => {
-        this.setState({ selectedPostId: id });
-    }
-
 
     render() {
         return (

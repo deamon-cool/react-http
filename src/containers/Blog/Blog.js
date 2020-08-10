@@ -4,7 +4,6 @@ import { Route, NavLink } from 'react-router-dom';
 import './Blog.css';
 import Posts from './Posts/Posts';
 import NewPost from './NewPost/NewPost';
-import Post from './FullPost/FullPost';
 import FullPost from './FullPost/FullPost';
 
 class Blog extends Component {

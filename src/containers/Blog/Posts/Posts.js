@@ -39,7 +39,7 @@ class Posts extends React.Component {
         if (!this.state.error) {
             posts = this.state.posts.map(post => {
                 return (
-                    <Link to={'/' + post.id} key={post.id}>
+                    <Link to={'/post/' + post.id} key={post.id}>
                         <Post
                             title={post.title}
                             author={post.author}
